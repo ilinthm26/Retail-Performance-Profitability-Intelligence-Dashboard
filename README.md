@@ -1,185 +1,114 @@
-🎯 Project Concept
+# Retail Performance Intelligence Dashboard (Power BI)
 
-Title:
+An interactive Power BI dashboard analyzing e-commerce performance across traffic, conversion, product demand, and profitability.
 
-Retail Performance & Profitability Intelligence Dashboard
+This project demonstrates how business intelligence tools can be used to transform raw transactional data into actionable insights for decision makers.
 
-Business Goal:
-Help leadership understand revenue growth, customer behavior, and profitability drivers.
+---
 
-📊 Dashboard Structure (Recruiter-Friendly Layout)
-🔹 Page 1 – Executive Overview
+# Dashboard Overview
 
-KPIs:
+The dashboard consists of four main sections designed to provide both high-level and detailed insights.
 
-Total Revenue
+## Home
+Navigation landing page providing access to all analytical views:
+- Executive Summary
+- Product Analysis
+- Profitability Analysis
 
-Gross Profit
+---
 
-Profit Margin %
+## Executive Summary
 
-YoY Growth
+High-level overview of business performance including:
 
-Avg Order Value
+- Net Revenue
+- Orders
+- Sessions
+- Conversion Rate
+- Year-over-Year Growth
+- Revenue Trends
 
-Customer Count
+This page helps executives quickly understand overall business performance.
 
-Visuals:
+---
 
-Revenue Trend (YoY comparison)
+## Product Analysis
 
-Category Contribution %
+Product-level insights including:
 
-Region Map
+- Orders by Product
+- Revenue by Product
+- Refund Impact Analysis
+- Product Demand Patterns
+- Revenue vs Refund Scatter Analysis
 
-Monthly Growth Waterfall
+This section identifies the most popular and problematic products.
 
-DAX to Showcase:
+---
 
-YTD, MTD
+## Profitability Analysis
 
-YoY %
+Financial performance analysis including:
 
-Running total
+- Gross Profit
+- Profit Margin by Product
+- Cost vs Revenue Comparison
+- Refund Impact on Profitability
+- Profit Contribution by Product
 
-Dynamic KPI switch
+Dynamic insights highlight key profit drivers and potential business risks.
 
-Conditional formatting
+---
 
-This page should look clean and executive-level.
+# Key Insights
 
-🔹 Page 2 – Customer Analytics
+- The **Original Mr. Fuzzy** is the primary profit driver, generating the highest revenue and profit.
+- **Birthday Sugar Panda** achieves the highest profit margin, indicating strong cost efficiency.
+- Refund impact highlights potential product performance issues.
+- Total gross profit generated across all products exceeds **€224K**.
 
-Show:
+---
 
-RFM Segmentation (Recency, Frequency, Monetary)
+# Data Model
 
-Repeat vs New Customers
+The dashboard uses a **star schema data model** consisting of:
 
-Customer Lifetime Value (CLV)
+Tables
+- `orders`
+- `order_items`
+- `order_item_refunds`
+- `website_sessions`
+- `products`
+- `calendar`
 
-Cohort retention (monthly signup vs repeat purchase)
+This structure ensures efficient filtering and scalable analysis.
 
-This is where you stand out from most portfolios.
+---
 
-Advanced Touch:
+# Key Features
 
-Customer risk flag (declining purchase frequency)
+- Interactive navigation between dashboard pages
+- Advanced DAX calculations for KPIs
+- Dynamic insight generation
+- Profitability and refund impact analysis
+- Executive-focused data storytelling
 
-🔹 Page 3 – Product & Profitability
+---
 
-Show:
+# Tools Used
 
-Top/Bottom products
-
-Profit margin by category
-
-Discount impact analysis
-
-Contribution analysis (Pareto 80/20 rule)
-
-Price sensitivity (what-if parameter)
-
-Add:
-
-Drill-through from category → product → transaction
-
-🔹 Page 4 – Forecast & Scenario Modeling
-
-Use:
-
-Built-in forecasting
-
-What-if parameter for:
-
-Discount %
-
-Sales increase %
-
-Cost increase %
-
-Show impact on:
-
-Profit
-
-Margin
-
-Revenue
-
-This screams: “I understand business impact.”
-
-📁 Where to Get Data
-
-Use:
-
-Kaggle Superstore dataset (upgrade it)
-
-Or generate synthetic ERP-style data
-
-Or combine retail + inflation data (more advanced)
-
-🧠 Data Model (IMPORTANT)
-
-Use proper star schema:
-
-Fact Table:
-
-Sales (OrderID, DateKey, ProductKey, CustomerKey, Revenue, Cost)
-
-Dimension Tables:
-
-Date
-
-Customer
-
-Product
-
-Geography
-
-Create:
-
-Proper Date table
-
-Relationships
-
-Avoid bi-directional relationships unless needed
-
-Recruiters check this.
-
-🔥 DAX You Should Definitely Include
-
-Revenue YTD
-
-Revenue YoY %
-
-Rolling 12 Months
-
-Customer Lifetime Value
-
-Rank by Sales
-
-% Contribution
-
-Moving Average
-
-Dynamic title measures
-
-Selected value logic
-
-If you can explain these confidently, you look solid.
-
-🎨 Design Tips (Make It Look Senior)
-
-Use muted theme (dark or minimal white)
-
-Limit to 3–4 main colors
-
-Proper spacing
-
-Consistent KPI card style
-
-Avoid overcrowding
-
-Use tooltips smartly
-
-Think “corporate dashboard”, not “Power BI gallery”.
+- Power BI
+- DAX
+- Data Modeling
+- Data Visualization
+- Business Intelligence
+- Time Intelligence
+
+---
+
+# Project Files
+
+Power BI file : https://drive.google.com/drive/u/0/folders/14BUNH2wH9oZAKFSFifJWbnQYvoRo0fhc
+# Dataset 
+https://mavenanalytics.io/data-playground/toy-store-e-commerce-database
